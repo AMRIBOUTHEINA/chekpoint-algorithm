@@ -1,0 +1,27 @@
+ALGORITHM compteur
+VAR
+     car,mot,voy: INTEGER;
+     /* car represente le nombre du caractere*/
+     /* mot represente le nombre de mots*/
+     /* voy correspond au nombre du voyelle dans la phrase */
+     car :=0; mot :=1; voy :=0;
+     C :CHAR;
+BEGIN
+     Write('give a sentence,which ends with point')
+     Read(C)
+     WHILE (C<>'.') DO
+     IF (C :='') THEN
+         car :=car+1;
+         mot :=mot+1;
+     ELSE_IF (C in['a','e','i','o','u']) THEN
+         car :=car+1;
+         voy :=voy+1;
+     ELSE
+         car :=car+1;
+     END_IF
+     END_WHILE
+     Read(car)
+     Read(mot)
+     Read(voy)
+END
+     
