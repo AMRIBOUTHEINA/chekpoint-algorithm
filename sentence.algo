@@ -20,8 +20,8 @@ BEGIN
          car :=car+1;
      END_IF
      END_WHILE
-     Read(car)
-     Read(mot)
-     Read(voy)
+    Write(car)
+    Write(mot)
+    Write(voy)
 END
      
